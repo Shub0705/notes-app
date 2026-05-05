@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+  namespace: logi
+  labels:
+    info: origin
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      info: origin
+  template:
+    metadata:
+      labels:
+        info: origin 
+    spec:
+      containes:
+       - name: shubham
+         image: shubhamdoc0705/notes
+         ports:
+          - containerPort: 5000
