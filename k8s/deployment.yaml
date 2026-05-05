@@ -17,6 +17,6 @@ spec:
     spec:
       containes:
        - name: shubham
-         image: shubhamdoc0705/notes
+         image: shubhamdoc0705/notes:v1.0.18
          ports:
           - containerPort: 5000
