@@ -15,7 +15,7 @@ spec:
       labels:
         info: origin 
     spec:
-      containes:
+      containers:
        - name: shubham
          image: shubhamdoc0705/notes:v1.0.18
          ports:
